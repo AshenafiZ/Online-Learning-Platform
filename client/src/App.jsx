@@ -6,8 +6,11 @@ function App() {
   return (
     <>
       <Home></Home>
-      <h1>hello ermi</h1>
+      <div className='bg-green-600'>
+       <h1 className='text-red-500 font-bold'>hello ermi</h1>
+      </div>
       
+
     </>
   )
 }
