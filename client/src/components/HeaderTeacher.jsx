@@ -1,10 +1,11 @@
 // src/Navbar.js
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 
 function Teacher() {
   return (
-    <nav className="bg-blue-900 text-white fixed top-0 left-0 w-full shadow-lg z-10 h-16">
+    <>
+    <nav className="bg-blue-900 z-50 text-white fixed top-0 left-0 w-full shadow-lg z-10 h-16">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center h-full">
         <div className="flex space-x-4">
           <NavLink
@@ -61,6 +62,10 @@ function Teacher() {
         </div>
       </div>
     </nav>
+    <div className="mt-16">
+        <Outlet />
+    </div>
+    </>
   );
 };
 
